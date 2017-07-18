@@ -2,8 +2,8 @@
 HC-SR04 Ping distance sensor]
 VCC  -> 5v 
 GND  -> GND
-Echo -> pin 13 
-Trig -> pin 12
+Echo -> pin 12
+Trig -> pin 13
 Sensor que mede o tempo de ida e volta 
 de uma onda sonora gerada pelo o buzzer
 araves de um pequeno microfone.
@@ -39,7 +39,7 @@ void loop() {
 
  
   if (distance >= 200 || distance <= 0) {    // verifica se o valor de distance 
-    Serial.println("fora de alacance");      // na faixa desejada
+    Serial.println("fora de alcance");      // na faixa desejada
   }
   else {
     Serial.print(distance);
